@@ -55,22 +55,28 @@
       <div class="about__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
     </div>
   </section>
-  <div class="ad">
+  <section class="ad">
     <div class="container">
       <h2 class="ad__title">На правах рекламы</h2>
       <div class="ad__cards">
         <div class="ad__card">
           <div class="ad__img">
-            <img src="images/cars.jpg" alt="cars">
+            <picture class='ad__picture'>
+              <source media="(max-width: 540px)" srcset="images/cars-mini.jpg">
+              <img src="images/cars.jpg" alt="cars">
+            </picture>
           </div>
           <div class="ad__card-title">Бесплатная диагностика авто <br> в Питере</div>
-          <div class="ad__card-subtitle">Всем новым клиентам автосервиса Драйв</div>
+          <div class="ad__card-subtitle ad__card-subtitle--small">Всем новым клиентам автосервиса <br class="px360"> Драйв</div>
           <div class="ad__card-site">Драйв.ру</div>
           <a href="#" class="ad__card-link"></a>
         </div>
         <div class="ad__card">
           <div class="ad__img">
-            <img src="images/cat.jpg" alt="cat">
+            <picture class='ad__picture'>
+              <source media="(max-width: 540px)" srcset="images/cat-mini.jpg">
+              <img src="images/cat.jpg" alt="cat">
+            </picture>
           </div>
           <div class="ad__card-title">Выставка бездомных котиков <br> в Москве</div>
           <div class="ad__card-subtitle">Выставка от муниципального приюта</div>
@@ -79,7 +85,10 @@
         </div>
         <div class="ad__card">
           <div class="ad__img">
-            <img src="images/barbershop.jpg" alt="barbershop">
+            <picture class='ad__picture'>
+              <source media="(max-width: 540px)" srcset="images/barbershop-mini.jpg">
+              <img src="images/barbershop.jpg" alt="barbershop">
+            </picture>
           </div>
           <div class="ad__card-title">Скидка 15% на стрижку бороды</div>
           <div class="ad__card-subtitle">Барбершоп Friends в елябинске.<span class="break"></span> Стрижка бороды, бритьё, укладка</div>
@@ -88,7 +97,7 @@
         </div>
       </div>
     </div>
-  </div> 
+  </section> 
   <script src="script.js"></script>
 </body>
 </html>

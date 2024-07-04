@@ -191,7 +191,9 @@ button {
   padding-left: 24px;
   padding-right: 24px;
 }
-
+body {
+  background: var(--background);
+}
 .hero {
   padding-top: 50px;
   padding-bottom: 40px;
@@ -201,8 +203,6 @@ button {
   gap: 24px;
   grid-template-columns: 58% 40%;
   margin-bottom: 39px;
-}
-.hero__left {
 }
 .hero__logo {
   font-family: var(--font-family);
@@ -459,6 +459,13 @@ button {
   .hero {
     text-align: left;
     padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .hero__form-title {
+    font-size: 20px;
+  }
+  .hero__form-plea {
+    font-size: 14px;
   }
   .hero__wrapper {
     gap: 20px;
@@ -516,7 +523,6 @@ button {
     max-width: 400px;
     display: block;
     font-size: 14px;
-    text-align: justify;
   }
   .hero__form {
     width: 100%;
@@ -618,18 +624,16 @@ button {
   margin-bottom: 20px;
 }
 .ad__cards {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   gap: 24px;
 }
 .ad__card {
+  border-radius: 10px;
+  background: var(--white);
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.ad__img {
 }
 .ad__card-title {
   font-family: var(--font-family);
@@ -666,6 +670,19 @@ button {
   width: 100%;
   height: 100%;
 }
+.ad__img {
+    margin: 0; /* Убираем внешний отступ у изображений */
+}
+.ad__card-title, .ad__card-subtitle, .ad__card-site {
+    padding-right: 15px; /* Внутренний отступ для текстовых элементов */
+    padding-left: 15px; /* Внутренний отступ для текстовых элементов */
+}
+.ad__card-site {
+  padding-bottom: 15px;
+}
+.px360 {
+  display: none;
+}
 @media (max-width: 1256px) {
   .ad__title {
     text-align: center;
@@ -677,13 +694,42 @@ button {
   }
 }
 @media(max-width:540px) {
+  .ad {
+    padding-bottom: 20px;
+  }
   .ad__title {
     text-align: unset;
     font-size: 24px;
     margin-bottom: 15px;
   }
+  .ad__card-title {
+    font-size: 16px;
+  }
   .ad__img img {
     width: 312px;
-    height: 190px;
+  }
+  .ad__card-subtitle {
+    font-size: 14px;
+  }
+  .ad__card-site {
+    font-size: 12px;
+  }
+  .ad__card-title, .ad__card-subtitle, .ad__card-site {
+    padding-right: 10px; /* Внутренний отступ для текстовых элементов */
+    padding-left: 10px; /* Внутренний отступ для текстовых элементов */
+}
+  .ad__card-site {
+    padding-bottom: 10px;
+  }
+  .ad__cards {
+    gap: 10px;
   }
 }
+@media(max-width:359px) {
+  .ad__img img {
+    width: 271px;
+  }
+  .px360 {
+    display: block;
+  }
+} 

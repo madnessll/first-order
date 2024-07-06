@@ -34,7 +34,7 @@ body {
   display: grid;
   gap: 24px;
   grid-template-columns: 58% 40%;
-  margin-bottom: 39px;
+  margin-bottom: 26px;
 }
 .hero__logo {
   font-family: var(--font-family);
@@ -102,6 +102,10 @@ body {
   background-color: var(--primary);
   transition: all 0.5s ease;
 }
+.hero__btn--2 {
+  padding-top: 28.5px;
+  padding-bottom: 28.5px;
+}
 .hero__btn:hover {
   background: var(--primary-hover);
 }
@@ -138,6 +142,7 @@ body {
   width: 486px;
   background-color: #fff;
   padding: 20px 30px;
+  padding-top: 24px;
   border-radius: 15px;
   background: var(--gray-light);
 }
@@ -148,7 +153,7 @@ body {
   text-align: right;
   color: var(--black);
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .hero__form-plea {
   font-family: var(--font-family);
@@ -157,6 +162,7 @@ body {
   line-height: 130%;
   text-align: center;
   color: var(--black);
+  margin-bottom: 10px;
 }
 .hero__form-label {
   font-family: var(--font-family);
@@ -532,10 +538,15 @@ body {
 }
 .ad__img {
     margin: 0; /* Убираем внешний отступ у изображений */
+    margin-bottom: 5px;
 }
 .ad__card-title, .ad__card-subtitle, .ad__card-site {
     padding-right: 15px; /* Внутренний отступ для текстовых элементов */
     padding-left: 15px; /* Внутренний отступ для текстовых элементов */
+    margin-bottom: 5px;
+}
+.ad__card-subtitle {
+  margin-bottom: 0;
 }
 .ad__card-site {
   padding-bottom: 15px;
